@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Phiigo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../stylesheets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style> 
+	input[type=text] {
+	    width: 130px;
+	    box-sizing: border-box;
+	    border: 3px solid #ccc;
+	    border-radius: 30px;
+	    font-size: 16px;
+	    background-color: white;
+	    /*background-image: url('../image/searchicon.png');*/
+	    background-position: 10px 10px; 
+	    background-repeat: no-repeat;
+	    padding: 12px 12px 12px 12px;
+	    -webkit-transition: width 0.4s ease-in-out;
+	    transition: width 0.4s ease-in-out;
+		margin-bottom: 9px;
+	}
+
+	input[type=text]:focus {
+	    width: 100%;
+	}
+	</style>
+
+</head>
+<body>
+<div class="container_fluid"> 
+<div data-spy="scroll" data-target=".scrollspy">
+	<nav role="navigation" class="navbar navbar-static-top navbar-default" style="margin-bottom:0px">
+		<div id="navbar" class="collapse navbar-collapse">
+		    <h2 ><a id="nav-entry" href="/home" style="color:#FEB21A">Phiigo</a></h2>
+			<!-- <i class="glyphicon glyphicon-user form-control-feedback"></i> -->
+		    <form action="/query" method="POST">
+		        <input type="text" class="form-control" id = "inputTexts" name = "queryName" placeholder="Search.." autocorrect="on" spellcheck="true">
+		    </form>
+			<div id="logout">			
+				<button type="button" class="btn btn-default btn-sm">
+					<span class="glyphicon glyphicon-log-out"></span><a href="/home/logout"> Log out </a>
+				</button>							
+			</div>
+		</div>
+    </nav> 	
+</div>
+<!-- <div class="container_fluid"> -->
+	  <div class="row">
+	    <div class="col-sm-8" style="background-color:lavender;">
+			<div class="resultblock">
+			    	<div class="renderpage" >
+			    		<div class="resultslot">
+			    			<div id="t1" class="resulttitle">
+			    				<a id="resultlink" href="" target="_blank">titleholder</a>
+			    			</div>
+			    			<div>
+			    				<div >
+			    					<cite id="u1" class="resulturl">urlholder</cite>
+			    				</div>
+			    				<div id="d1" class="resultdescription">disholder</div> 
+			    			</div>  			
+			    		</div>
+				        <div class="resultslot">
+			    			<div id="t2" class="resulttitle" target="_blank">
+			    				<a href="">titleholder</a>
+			    			</div>
+			    			<div>
+			    				<div >
+			    					<cite id="u2" class="resulturl">urlholder</cite>
+			    				</div>
+			    				<div id="d2" class="resultdescription">disholder</div>
+			    			</div>  			
+			    		</div>
+				        <div class="resultslot">
+			    			<div id="t3" class="resulttitle" target="_blank">
+			    				<a href="">titleholder</a>
+			    			</div>
+			    			<div>
+			    				<div >
+			    					<cite id="u3" class="resulturl">urlholder</cite>
+			    				</div>
+			    				<div id="d3" class="resultdescription">disholder</div>
+			    			</div>  			
+			    		</div>
+				        <div class="resultslot">
+			    			<div id="t4" class="resulttitle" target="_blank">
+			    				<a href="">titleholder</a>
+			    			</div>
+			    			<div>
+			    				<div >
+			    					<cite id="u4" class="resulturl">urlholder</cite>
+			    				</div>
+			    				<div id="d4" class="resultdescription">disholder</div>
+			    			</div>  			
+			    		</div>
+				        <div class="resultslot">
+			    			<div id="t5" class="resulttitle" target="_blank">
+			    				<a href="">titleholder</a>
+			    			</div>
+			    			<div>
+			    				<div >
+			    					<cite id="u5" class="resulturl">urlholder</cite>
+			    				</div>
+			    				<div id="d5" class="resultdescription">disholder</div>
+			    			</div>  			
+			    		</div>
+				        <div class="resultslot">
+			    			<div id="t6" class="resulttitle" target="_blank">
+			    				<a href="">titleholder</a>
+			    			</div>
+			    			<div>
+			    				<div >
+			    					<cite id="u6" class="resulturl">urlholder</cite>
+			    				</div>
+			    				<div id="d6" class="resultdescription">disholder</div>
+			    			</div>  			
+			    		</div>
+			    		<div class="resultslot">
+			    			<div id="t7" class="resulttitle" target="_blank">
+			    				<a href="">titleholder</a>
+			    			</div>
+			    			<div>
+			    				<div >
+			    					<cite id="u7" class="resulturl">urlholder</cite>
+			    				</div>
+			    				<div id="d7" class="resultdescription">disholder</div>
+			    			</div>  			
+			    		</div>
+				        <div class="resultslot">
+			    			<div id="t8" class="resulttitle" target="_blank">
+			    				<a href="">titleholder</a>
+			    			</div>
+			    			<div>
+			    				<div >
+			    					<cite id="u8" class="resulturl">urlholder</cite>
+			    				</div>
+			    				<div id="d8" class="resultdescription">disholder</div>
+			    			</div>  			
+			    		</div>
+				        <div class="resultslot">
+			    			<div id="t9" class="resulttitle" target="_blank">
+			    				<a href="">titleholder</a>
+			    			</div>
+			    			<div>
+			    				<div >
+			    					<cite id="u9" class="resulturl">urlholder</cite>
+			    				</div>
+			    				<div id="d9" class="resultdescription">disholder</div>
+			    			</div>  			
+			    		</div>
+				        <div class="resultslot">
+			    			<div id="t10" class="resulttitle" target="_blank">
+			    				<a href="">titleholder</a>
+			    			</div>
+			    			<div>
+			    				<div >
+			    					<cite id="u10" class="resulturl">urlholder</cite>
+			    				</div>
+			    				<div id="d10" class="resultdescription">disholder</div>
+			    			</div>  			
+			    		</div>
+				        
+			    	</div>
+					
+			    </div>
+	    </div>		
+	    <div class="col-sm-4" style="background-color:lavenderblush">    	
+			<div class="renderpage" >
+	    		<div class="resultslot">
+    				<div >
+    					<cite class="resulturl"></cite>
+    				</div>			
+	    		</div>
+		        <div class="resultslot">
+    				<div >
+    					<cite class="resulturl"></cite>
+    				</div> 			
+	    		</div>
+		        <div class="resultslot">
+    				<div >
+    					<cite class="resulturl"></cite>
+    				</div>  			
+	    		</div>
+		        <div class="resultslot">
+    				<div >
+    					<cite class="resulturl"></cite>
+    				</div>  			
+	    		</div>
+		        <div class="resultslot">
+    				<div >
+    					<cite class="resulturl"></cite>
+    				</div>  			
+	    		</div>
+		        <div class="resultslot">
+    				<div >
+    					<cite class="resulturl"></cite>
+    				</div>  			
+	    		</div>
+	    		<div class="resultslot">
+    				<div >
+    					<cite class="resulturl"></cite>
+    				</div>  			
+	    		</div>
+		        <div class="resultslot">
+    				<div >
+    					<cite class="resulturl"></cite>
+    				</div> 			
+	    		</div>
+		        <div class="resultslot">
+    				<div >
+    					<cite class="resulturl"></cite>
+    				</div>  			
+	    		</div>
+		        <div class="resultslot">
+    				<div >
+    					<cite class="resulturl"></cite>
+    				</div> 			
+	    		</div>		        
+	    	</div>
+			
+	    </div>
+		
+	  </div>
+	<div id="page-bar">
+        <ul id="page" class="pagination">
+		    <li id="p1" class="page-item">
+                  <a id="h1" href="/result?startIdx=0">1</a>
+              </li>
+		    <li id="p2" class="page-item">
+                  <a id="h2" href="/result?startIdx=10">2</a>
+              </li>
+              <li id="p3" class="page-item">
+                  <a id="h3" href="/result?startIdx=20">3</a>
+              </li>
+              <li id="p4" class="page-item">
+                  <a id="h4" href="/result?startIdx=30">4</a>
+              </li>
+              <li id="p5" class="page-item">
+                  <a id="h5" href="/result?startIdx=40">5</a>
+              </li>
+              <li id="p6" class="page-item">
+                  <a id="h6" href="/result?startIdx=50">6</a>
+              </li>
+              <li id="p7" class="page-item">
+                  <a id="h7" href="/result?startIdx=60">7</a>
+              </li>
+              <li id="p8" class="page-item">
+                  <a id="h8" href="/result?startIdx=70">8</a>
+              </li>    
+			</ul>
+	</div>
+</div>
+	
+
+</body>
+</html>
+
